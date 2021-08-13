@@ -1,0 +1,23 @@
+import json
+person = ' { "name":"krishna" , "age":23 , "city":"tpt" } '
+
+ y = json.loads(person)         //convert string to json using json.loads method
+
+ print(type(y))
+<class 'dict'>         //after converting the string  the type is dictionary or json
+
+ print ( y["age"])
+23
+
+ y.values()           //this command prints the values
+
+dict_values(['krishna', 23, 'tpt'])
+
+ y.keys()        //this command prints the keys
+
+dict_keys(['name', 'age', 'city'])
+
+ z=json.dumps(y)       //again converting the dictionary or json to string use json.dumps method
+
+print(type(z))
+<class 'str'>
